@@ -1,0 +1,300 @@
+
+.container {
+  text-align: center;
+}
+
+@media(min-width: 240px) and (max-width: 767px) {
+  .container {
+    text-align: left;
+  }
+}
+
+@media(min-width: 1024px) and (max-width: 1366px) {
+  .control_btns {
+    margin-top: 0px;
+  }
+
+  #raw_output {
+    width: 450px;
+    margin-top: 50px;
+  }
+
+  #output {
+    width: 450px;
+    margin-top: 50px;
+  }
+
+  #recorded_output {
+    width: 450px;
+    margin-top: 50px;
+  }
+  
+  .control_btns .btn {
+    margin: 0.25rem;
+  }
+}
+
+@media(min-width: 240px) and (max-width: 359px) {
+  #raw_output {
+    width: 290px;
+    margin-top: 100px;
+  }
+
+  #recorded_output {
+    width: 290px;
+    margin-top: 100px;
+  }
+
+  #output {
+    width: 290px;
+    margin-top: 100px;
+  }
+
+  .control_btns .btn {
+    margin: 0.25rem;
+  }
+
+  .control_btns {
+    margin-top: 0px;
+  }
+
+  .dg.ac {
+    position: absolute !important;
+  }
+}
+
+@media(min-width: 360px) and (max-width: 767px) {
+  #raw_output {
+    width: 330px;
+    margin-top: 100px;
+  }
+
+  #recorded_output {
+    width: 330px;
+    margin-top: 100px;
+  }
+
+  #output {
+    width: 330px;
+    margin-top: 100px;
+  }
+
+  .control_btns .btn {
+    margin: 0.50rem;
+  }
+
+  .dg.ac {
+    position: absolute !important;
+  }
+}
+
+@media(min-width: 768px) and (max-width: 1023px) {
+  #raw_output {
+    width: 75%;
+    margin-top: 80px;
+  }
+
+  #recorded_output {
+    width: 75%;
+    margin-top: 80px;
+  }
+
+  #output {
+    width: 75%;
+    margin-top: 80px;
+  }
+
+  .canvas-wrapper {
+    width: 100% !important;
+  }
+
+  .control_btns {
+    margin-top: 0px;
+  }
+
+  .control_btns .btn {
+    margin: 0.25rem;
+  }
+
+  .dg.ac {
+    position: absolute !important;
+  }
+}
+
+#record-button[disabled] {
+  background: #A9A9A9;
+}
+
+#review-button[disabled] {
+  background: #A9A9A9;
+}
+
+#accept-button[disabled] {
+  background: #A9A9A9;
+}
+
+#reject-button[disabled] {
+  background: #A9A9A9;
+}
+
+.canvas-wrapper,
+#scatter-gl-container {
+  display: inline-block;
+  vertical-align: top;
+}
+
+#scatter-gl-container {
+  border: solid 1px black;
+  position: relative;
+}
+
+/* center the canvas within its wrapper */
+#scatter-gl-container canvas {
+  left: 50%;
+  position: absolute;
+  top: 50%;
+  transform: translate3d(-50%, -50%, 0);
+}
+
+#counter {
+  font-size: 600%;
+  position: absolute;
+  top: 27%;
+  right: 42%;
+  color: rgb(246, 250, 8);
+}
+
+.container {
+  position: relative;
+}
+
+.btn {
+  display: inline-block;
+  background-color: #eb9748;
+  border: none;
+  color: rgb(245, 243, 241);
+  padding: 12px 16px;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 24px;
+}
+
+.moveGUI{ 
+  position: absolute;
+  top: 88%;
+  right: 33%;
+}
+
+#record-button {
+  padding: 15px 16px;
+}
+
+.rectangle {
+position: absolute;
+top: 10%;
+left: 0%;
+background-color: black;
+width: 650px;
+height: 670px;
+border: 1px solid #000;
+}
+
+.choose {
+  font-size: 23px;
+  color: white;
+  margin: 0;
+  position: absolute;
+  top: 20%;
+  left: 50%;
+  margin-right: -50%;
+  transform: translate(-50%, -50%)
+}
+.cam_icon{
+  display: block;
+}
+.cam_icon i{
+  font-size: 3rem;
+  color: #fff;
+}
+
+.cam_icon:hover{
+  text-decoration: none;
+}
+.cam_icon:hover i{
+  font-size: 4rem;
+}
+
+.record_icon {
+  position: absolute;
+  top: 50%;
+  left: 23%;
+  margin-right: -50%;
+  z-index: 9999;
+}
+
+.upload_icon {
+  position: absolute;
+  top: 50%;
+  left: 60%;
+  margin-right: -50%;
+  z-index: 9999;
+}
+
+.cam_icon span {
+  color: rgb(241, 240, 240);
+  padding: 5px 0 10px 0;
+  display: block;
+  z-index: 9999;
+}
+
+
+/* button {
+  margin: 0 3px 10px 0;
+  padding-left: 2px;
+  padding-right: 2px;
+  width: 99px;
+}
+
+button:last-of-type {
+  margin: 0;
+}
+
+p.borderBelow {
+  margin: 0 0 20px 0;
+  padding: 0 0 20px 0;
+}
+
+video {
+  height: 232px;
+  margin: 0 12px 20px 0;
+  vertical-align: top;
+  width: calc(20em - 10px);
+}
+
+video:last-of-type {
+  margin: 0 0 20px 0;
+}
+
+video#gumVideo {
+  margin: 0 20px 20px 0;
+}
+
+@media (max-width: 500px) {
+  button {
+    font-size: 0.8em;
+    width: calc(33% - 5px);
+  }
+}
+
+@media (max-width: 720px) {
+  video {
+    height: calc((50vw - 48px) * 3 / 4);
+    margin: 0 10px 10px 0;
+    width: calc(50vw - 48px);
+  }
+
+  video#gumVideo {
+    margin: 0 10px 10px 0;
+  }
+} */
+
